@@ -1,5 +1,6 @@
 package com.chat.backChat.controllers;
 
+<<<<<<< HEAD
 import com.chat.backChat.entities.Message;
 import com.chat.backChat.entities.User;
 import com.chat.backChat.repositories.MessageRepository;
@@ -52,4 +53,7 @@ public class MessageController {
         repository.deleteById(id);
         return true;
     }
+=======
+public class MessageController {
+>>>>>>> origin/malik
 }

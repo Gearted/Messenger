@@ -35,7 +35,11 @@ public class UserController {
         return repository.save(user);
     }
 
+<<<<<<< HEAD
     @PutMapping("/user/{id}")
+=======
+    @PutMapping("/book/{id}")
+>>>>>>> origin/malik
     public User update(@PathVariable Long id, @RequestBody User user){
         // getting blog
         User userToUpdate = repository.findById(id).get();
@@ -45,7 +49,11 @@ public class UserController {
         return repository.save(userToUpdate);
     }
 
+<<<<<<< HEAD
     @DeleteMapping("user/{id}")
+=======
+    @DeleteMapping("book/{id}")
+>>>>>>> origin/malik
     public boolean delete(@PathVariable Long id){
         repository.deleteById(id);
         return true;
