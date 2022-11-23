@@ -15,6 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { HomeComponent } from './pages/home/home.component';
 import { MessagerieComponent } from './pages/messagerie/messagerie.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ConversationComponent } from './components/conversation/conversation.component';
 
 
 
@@ -30,6 +32,8 @@ import { MessagerieComponent } from './pages/messagerie/messagerie.component';
     FooterComponent,
     HomeComponent,
     MessagerieComponent,
+    ContactComponent,
+    ConversationComponent,
 
   ],
   imports: [

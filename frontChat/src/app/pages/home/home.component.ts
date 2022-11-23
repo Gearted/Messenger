@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ContactComponent } from '../../components/contact/contact.component';
+import { ConversationComponent } from '../../components/conversation/conversation.component';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+
+  constructor() { }
+
+  ngOnInit() {
+
+
+}
 
 }

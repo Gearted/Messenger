@@ -4,8 +4,8 @@
       <p>message</p>
 
   </div>
-  <form class="form-message">
-      <input type="text" placeholder="message">
+  <form class="form-message" [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+      <input id="message" type="message" formControlName="message">
       <button type="submit">Envoyer</button>
   </form>
 </div>
