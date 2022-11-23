@@ -1,20 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginRegisterComponent } from './pages/login-register/login-register.component';
-import { HomeComponent } from './pages/home/home.component';
-import { MessagerieComponent } from './pages/messagerie/messagerie.component';
+import { ChatComponent } from './chat/chat.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  {
-    path: 'login',
-    component: LoginRegisterComponent,
-  },
-  {
-    path: 'messagerie',
-    component: MessagerieComponent,
-  },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+
+{ path: '', component: ChatComponent }
+
 
 
 ];

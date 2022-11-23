@@ -1,7 +1,7 @@
 package com.chat.backChat.entities;
 
 import javax.persistence.*;
-import java.util.List;
+
 
 @Entity
 public class User {
@@ -9,21 +9,26 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long user_id;
     private String username;
-    private String email;
     private String password;
+    private String email;
+    private String role;
 
-    @OneToMany(mappedBy = "user")
-   private List<Message> users;
-
+    public User(Long id, String username, String password, String email, String role) {
+        this.user_id = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.role = role;
+    }
 
     public Long getId() {
-        return id;
+        return user_id;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.user_id = id;
     }
 
     public String getUsername() {
@@ -34,14 +39,6 @@ public class User {
         this.username = username;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -50,11 +47,19 @@ public class User {
         this.password = password;
     }
 
-    public List<Message> getUsers() {
-        return users;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUsers(List<Message> users) {
-        this.users = users;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
